@@ -1,4 +1,5 @@
 const SearchColor = ({ search, setSearch }) => {
+
   return (
       <form className="searchForm" onSubmit={(e) => e.preventDefault()}>
         <label htmlFor="search">Search</label>
@@ -8,7 +9,7 @@ const SearchColor = ({ search, setSearch }) => {
           role='searchbox'
           placeholder='Add color name'
           value={search}
-          onchange={(e) => setSearch(e.target.value)}
+          onChange={(e) => {setSearch(e.target.value)}}
           />
       </form>
     )

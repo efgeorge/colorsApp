@@ -1,13 +1,8 @@
-const Content = ({ search, setSearch, colors, setColors}) => {
+import { colors } from "./colors";
+
+const Content = ({ search }) => {
   return (
-    <div class="square">
-      (
-      {(colors.name).filter(
-        (colors.name).toLowerCase().includes(search.toLowerCase())
-      )}
-      ? style = {background-color: colors.hex} : style = "background-color: #000000"
-      ) 
-    </div>
+    <div className="square" style={{backgroundColor: colors[search] || "black", transition: "background-color .5s"}} />
   );
 }
 
