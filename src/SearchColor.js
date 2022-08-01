@@ -8,7 +8,7 @@ const SearchColor = ({ search, setSearch }) => {
           role='searchbox'
           placeholder='Add color name'
           value={search}
-          onchange={(e) => setSearch(e.target.value)}
+          onChange={(e) => {setSearch(e.target.value)}}
           />
       </form>
     )
